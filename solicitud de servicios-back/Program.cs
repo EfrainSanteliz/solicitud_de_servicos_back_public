@@ -58,7 +58,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:3000", "http://solicituddeservicios.becasycredito.gob.mx/")
+        builder.WithOrigins("http://localhost:3000", "http://solicituddeservicios.becasycredito.gob.mx/", "https://efrainsanteliz.github.io/")
                .AllowAnyHeader()   // Permite cualquier encabezado en las solicitudes
                .AllowAnyMethod()   // Permite cualquier método HTTP (GET, POST, PUT, DELETE, etc.)
                .AllowCredentials(); // Permite enviar crede
